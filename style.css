@@ -1,0 +1,182 @@
+body {
+  background-color: rgb(165, 142, 119);
+}
+div .white {
+  background-color: #fff;
+  margin: 30px 20px;
+  padding: 40px 40px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px #3737375d;
+}
+.app {
+  height: 480px;
+  width: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+.wheel {
+  width: 100%;
+  height: 100%;
+}
+.button {
+  height: 80px;
+  width: 250px;
+  margin: 40px auto;
+  cursor: pointer;
+  display: block;
+}
+.button:hover {
+  opacity: 0.8;
+}
+
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 211px;
+  top: 38px;
+  z-index: 2;
+}
+
+.blur {
+  animation: blur 10s;
+}
+
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur (1.5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+/* Congratulation page */
+.congratulation {
+  background: #e8d9c8;
+  width: 700px;
+  height: 400px;
+  text-align: center;
+  border-radius: 15px;
+  padding-top: 30px;
+  border: thick double #000000;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+  text-align: center;
+  z-index: 3;
+}
+
+h2 {
+  font-family: Bebas Neue;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 0.2rem;
+}
+h4 {
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+.option {
+  background-color: white;
+  width: 190px;
+  border-radius: 5px;
+  text-align: center;
+  border: 1px solid;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 13px;
+  letter-spacing: 0.05rem;
+  font-family: poppins;
+}
+
+.one-option {
+  background-color: white;
+  width: 420px;
+  border-radius: 5px;
+  text-align: center;
+  font-family: poppins;
+  border: 1px solid;
+  display: inline-block;
+  vertical-align: middle;
+  justify-content: space-between;
+  margin-top: 30px;
+  border: thick double #8b5f5f;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+  cursor: pointer;
+  font-size: 16xcpx;
+  letter-spacing: 0.01rem;
+}
+.one-option:hover {
+  opacity: 0.8;
+}
+.congratulation {
+  position: absolute;
+}
+
+.one-option span {
+  font-size: 20px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 2;
+}
+.hidden {
+  display: none;
+}
+
+.close-window {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  border: solid;
+  background: none;
+}
+.one-option:hover {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}

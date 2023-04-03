@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Lottery Wheel </title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="app">
+    <div class="white">
+      <img class="marker" src="marker.png" />
+      <img class="wheel" src="wheel2.png" />
+      <img onclick="myFunction()" class="button" src="button4.png" />
+
+
+    </div>
+  </div>
+
+
+  <div class="congratulation hidden">
+    <button onclick="closeWindow()" class="close-window">X</button>
+    <h2>Congratulations!</h2>
+    <h4>Choose your prize:</h4>
+    <div>
+      <button class="option">
+        <p>100 EUR</p>
+      </button>
+      <button class="option">
+        <p>iPhone 2G</p>
+      </button>
+      <button class="option">
+        <p>Volvo A25G</p>
+      </button>
+    </div>
+    <div class="oneoption blink">
+      <button onclick="closeWindow()" class="one-option">
+        <p>No, thanks. I'm good <span>🤷‍♀️</span><br> I'm here just to play</p>
+      </button>
+    </div>
+  </div>
+
+  <div onclick="closeWindow()" class="overlay hidden"></div>
+
+
+  <script src="script.js"></script>
+  <script>
+
+    // let option = document.querySelectorAll('.option');
+    // console.log(option);
+    // for (let i = 0; i < option.length; i++) {
+    //   option[i].addEventListener("mouseover", function () {
+    //     this.style.position = 'absolute';
+    //     this.style.left = `${Math.ceil(Math.random() * (60))}%`;
+    //     this.style.right = `${Math.ceil(Math.random() * 60)}%`;
+    //   });
+    // }
+
+
+    let optionClick = document.querySelectorAll('.option');
+    for (let i = 0; i < optionClick.length; i++) {
+      optionClick[i].addEventListener("click", function () {
+        this.style.display = "none";
+
+      });
+    }
+
+
+
+    let showOptions = document.querySelector(".button");
+    showOptions.addEventListener("click", function () {
+      for (let i = 0; i < optionClick.length; i++) {
+        optionClick[i].style.display = "inline";
+      }
+    });
+
+    // let optionShow = document.querySelectorAll('.option');
+    // for (let i = 0; i < optionClick.length; i++) {
+    //   optionshow[i].addEventListener("click", function () {
+    //     this.style.display = "block";
+
+    //   });
+    // }
+  </script>
+
+</body>
+
+</html>
