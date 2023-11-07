@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: 'Poppins', sans-serif;
 	background-color: rgb(165, 142, 119);
 }
 div .white {
@@ -66,7 +67,7 @@ div .white {
 	height: 400px;
 	text-align: center;
 	border-radius: 15px;
-	padding-top: 30px;
+	padding-top: 60px;
 	border: thick double #000000;
 	position: absolute;
 	margin-left: auto;
@@ -79,15 +80,20 @@ div .white {
 }
 
 h2 {
-	font-family: Bebas Neue;
+	font-family: 'Bebas Neue', sans-serif;
 	font-weight: 500;
 	font-size: 28px;
 	letter-spacing: 0.2rem;
+  padding-bottom: 30px;
 }
 h4 {
 	font-family: Poppins;
 	font-weight: 400;
 	letter-spacing: 0.1rem;
+  padding-bottom: 8px;
+}
+.oneoption.blink button {
+  padding: 10px 5px 15px 5px;
 }
 .option {
 	background-color: white;
@@ -154,14 +160,18 @@ h4 {
 	font-size: 1rem;
 	color: #333;
 	cursor: pointer;
-	border: solid;
+	border: 2px solid;
 	background: none;
+  padding: 6px 9px;
 }
 .one-option:hover {
 	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
 	transform: translate3d(0, 0, 0);
 	backface-visibility: hidden;
 	perspective: 1000px;
+}
+.option  {
+  padding: 15px 5px;
 }
 
 @keyframes shake {
