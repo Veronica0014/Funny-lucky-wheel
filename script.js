@@ -1,21 +1,20 @@
 "use strict";
 
 var confetti = {
-  maxCount: 150,
-  speed: 2,
-  frameInterval: 15,
-  alpha: 1.0,
-  gradient: false,
-  start: null,
-  stop: null,
-  toggle: null,
-  pause: null,
+  maxCount: 150, 
+  speed: 2, 
+  frameInterval: 15, 
+  alpha: 1.0, 
+  gradient: false, 
+  start: null, 
+  stop: null, 
+  toggle: null, 
+  pause: null, 
   resume: null,
-  togglePause: null,
-  remove: null,
-  isPaused: null,
+  togglePause: null, 
+  remove: null, 
+  isPaused: null, 
   isRunning: null,
-};
 
 (function () {
   confetti.start = startConfetti;
